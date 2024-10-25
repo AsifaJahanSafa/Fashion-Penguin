@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- Roboto Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--  Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Font awsome -->
     <script src="https://kit.fontawesome.com/8aaa9fc818.js" crossorigin="anonymous"></script>
     <!-- Tailwind CDN -->
@@ -20,11 +22,12 @@
           colors: {
             clifford: '#da373d',
             'text-color': '#FABE4C',
-            'bg-gradient-1': '#A4BC46',
-            'bg-gradient-2': '#85A019',
+            'gradient-1': '#A4BC46',
+            'gradient-2': '#85A019',
             'primary-color': '#363958',
             'secondary-color': '#3E3E3E',
-            'BG-color': '#FFFBF0;',
+            'BG-color': '#FFFBF0',
+            'Green-text-color': '#A4BC46',
           }
         }
       }
@@ -38,13 +41,54 @@
 
     .roboto-font {
   font-family: "Roboto", sans-serif;
+    }
+  .montserrat-font {
+  font-family: "Montserrat", sans-serif;
   
 }
+
+  
+
     </style>
+    
 </head>
 <body class="bebas-neue">
-   <header class="BG-color">
+   <header class="bg-BG-color ">
+    <nav class="flex justify-between items-center max-w-screen-lg mx-auto px-4 ">
+        <div class="nav-log font-semibold flex justify-center items-center	">
+            <div class="nav-img">
+                <img src="./images/Frame.svg" alt="">
+            </div>
+            <h4 class="text-primary-color montserrat-font text-xl"><span class="text-Green-text-color ">Penguin</span>Fashion</h4>
+        </div>
+        <div class="menu-bar flex lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-menu hidden lg:flex text-sm ">
+            <a class="ml-12" href="">Home</a>
+            <a class="ml-12" href="">Product</a>
+            <a class="ml-12" href="">About us</a>
+            <a class="ml-12" href="">Contact us</a>
+        </div>
+    </nav>
 
+    <div class="banner max-w-screen-lg mx-auto md:flex justify-between items-center px-4">
+        <div class="banner-text-cont flex-1 space-y-4">
+            <h2 class="primary-color text-5xl lg:text-7xl font-normal		"><span class="text-text-color">Be the Penguins</span>
+                <br>of Winter</h2>
+                <p class="roboto-font">Lorem Ipsum is simply dummy text of the printing <br>
+                    and typesetting industry.</p>
+
+                    <button class="capitalize roboto-font bg-gradient-to-r from-gradient-1 to-gradient-2 text-white p-4 border rounded-lg">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Buy NOw
+                    </button>
+    
+        </div>
+        <div class="banner-img flex-1">
+            <img src="./images/model.png" alt="" srcset="">
+        </div>
+    </div>
    </header> 
    <main></main>
    <footer></footer>
